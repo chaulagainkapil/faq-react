@@ -1,0 +1,68 @@
+.main {
+  margin: 0 auto;
+  height: 100vh;
+  &__card {
+    background-color: white;
+    border-radius: 1rem;
+    width: 900px;
+    & > div {
+      height: 550px;
+    }
+    &--left {
+      background-image: url(../../assets/images/bg-pattern-desktop.svg);
+      background-position: 100% 61%;
+      //   overflow: hidden;
+      &--img {
+        .bigImage {
+          width: 100%;
+          height: auto;
+          object-position: -59px 8px;
+        }
+        .boxImage {
+          top: 0;
+          left: 0;
+          transform: translate(-50%, 70%);
+        }
+      }
+    }
+    &--right {
+      h1 {
+        align-self: flex-start;
+        padding-left: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.accordion-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.accordion-button:not(.collapsed) {
+  color: hsl(14, 88%, 65%); /* Change arrow color when opened */
+}
+
+.accordion-button:hover {
+  color: hsl(14, 88%, 65%); /* Change text color on hover */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent; /* Remove background color for expanded accordion */
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    &__card {
+      width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .main {
+    &__card {
+      flex-direction: column;
+      width: auto;
+    }
+  }
+}

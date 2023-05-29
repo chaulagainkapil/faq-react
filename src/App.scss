@@ -1,0 +1,28 @@
+header{
+    p{
+        font-size: 36px;
+    }
+}
+
+$blue_color: hsl(238, 29%, 16%);
+$red_color: hsl(14, 88%, 65%);
+
+$gradient1: hsl(273, 75%, 66%);
+$gradient2: hsl(240, 73%, 65%);
+
+$text_vblue: hsl(237, 12%, 33%);
+$text_dblue: hsl(240, 6%, 50%);
+
+$light_blue: hsl(240, 5%, 91%);
+
+@font-face{
+    font-family: 'Kumbh';
+    src: url('./assets/fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf') format('ttf');
+} 
+
+body{
+    font-family: 'Kumbh';
+    background-image: linear-gradient($gradient1, $gradient2);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
