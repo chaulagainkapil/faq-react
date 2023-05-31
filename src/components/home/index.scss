@@ -17,12 +17,12 @@
         .bigImage {
           width: 100%;
           height: auto;
-          object-position: -59px 8px;
+          object-position: -59px 0;
         }
         .boxImage {
           top: 0;
           left: 0;
-          transform: translate(-50%, 70%);
+          transform: translate(-50%, 65%);
         }
       }
     }
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 756px) {
   .main {
-    margin: 20% auto;
+    margin: 25% auto;
     &__card {
       flex-direction: column;
       width: 90%;
