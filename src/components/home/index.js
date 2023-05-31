@@ -1,5 +1,6 @@
 import "./index.scss";
 import boxDesktop from "../../assets/images/illustration-woman-online-desktop.svg";
+import boxMobile from "../../assets/images/illustration-woman-online-mobile.svg";
 import boxCube from "../../assets/images/illustration-box-desktop.svg";
 
 const Home = () => {
@@ -10,20 +11,25 @@ const Home = () => {
           <div className="main__card--left w-100  d-flex justify-content-center align-items-center">
             <div className="main__card--left--img position-relative ">
               <img
-                className="bigImage position-relative"
+                className="bigImage position-relative d-none d-md-block"
                 src={boxDesktop}
                 alt="desktop"
               />
               <img
-                className="boxImage position-absolute"
+                className="bigImage position-relative d-block d-md-none"
+                src={boxMobile}
+                alt="desktop"
+              />
+              <img
+                className="boxImage position-absolute d-none d-md-block"
                 src={boxCube}
                 alt="Cube"
               />
             </div>
           </div>
-          <div className="main__card--right w-100 d-flex flex-column justify-content-center align-items-center px-5">
+          <div className="main__card--right w-100 d-flex flex-column justify-content-center align-items-center px-0 px-md-5">
           <h1>FAQ</h1>
-            <div className="accordion accordion-flush" id="faqAccordian">
+            <div className="accordion accordion-flush w-100" id="faqAccordian">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                   <button

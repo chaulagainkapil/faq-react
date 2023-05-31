@@ -11,6 +11,7 @@
     &--left {
       background-image: url(../../assets/images/bg-pattern-desktop.svg);
       background-position: 100% 61%;
+      background-repeat: no-repeat;
       //   overflow: hidden;
       &--img {
         .bigImage {
@@ -62,7 +63,29 @@
   .main {
     &__card {
       flex-direction: column;
-      width: auto;
+      width: 90%;
+      & > div {
+        height: 100%;
+        margin-bottom: 1rem;
+      }
+      &--left {
+        height: 200px;
+        background-position: 50% 100%;
+        &--img {
+          height: 170px;
+
+          .bigImage {
+            object-position: 0;
+            top: -165px;
+            right: 0px;
+            height: 280px;
+          }
+        }
+      }
+      &--right {
+        width: 80% !important;
+        margin: 0 auto;
+      }
     }
   }
 }
