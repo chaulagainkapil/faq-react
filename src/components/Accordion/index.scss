@@ -1,0 +1,15 @@
+.accordion-button:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: hsl(14, 88%, 65%); /* Change arrow color when opened */
+  }
+  
+  .accordion-button:hover {
+    color: hsl(14, 88%, 65%); /* Change text color on hover */
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: transparent; /* Remove background color for expanded accordion */
+  }
