@@ -36,7 +36,6 @@
   }
 }
 
-
 @media screen and (max-width: 1000px) {
   .main {
     &__card {
@@ -47,8 +46,12 @@
 
 @media screen and (max-width: 756px) {
   .main {
-    margin: 25% auto;
+    display: block !important;
+    margin: 50% 0%;
+    width: 100%;
     &__card {
+      margin-left: auto;
+      margin-right: auto;
       flex-direction: column;
       width: 90%;
       & > div {
